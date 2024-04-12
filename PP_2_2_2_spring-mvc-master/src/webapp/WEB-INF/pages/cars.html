@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th><h1>Model</h1></th>
+        <th><h1>Driver</h1></th>
+        <th><h1>Number</h1></th>
+    </tr>
+
+    <div>
+        <th:block th:each="msg : ${messages}">
+            <tr>
+                <td th:text="${msg.getModel()}"></td>
+                <td th:text="${msg.getDriver()}"></h1></td>
+                <td th:text="${msg.getNumber()}"></h1></td>
+            </tr>
+
+        </th:block>
+    </div>
+</table>
+<!--<p>Hello world</p>-->
+</body>
+</html>
